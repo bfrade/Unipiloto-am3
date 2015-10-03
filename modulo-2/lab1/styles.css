@@ -1,6 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
 body{
 	color: #333;
-	font-family: Arial, "Monaco", sans-serif;
+	font-family: 'Indie Flower', cursive;
 	font-size: 16px;
 }
 
@@ -15,7 +17,7 @@ body{
 }
 
 #container header h1{
-	font-size: 4em;
+	font-size: 4em; /*4em define el tamaño de la fuente con relacion a la letra m de la fuente predeterminada en el OS*/
 	margin: 1em;
 }
 
@@ -42,8 +44,10 @@ body{
 
 }
 
+/* al estar vacio hereda los antributos del parrafo anterior */
+
 @media screen and (max-width: 650px){
-	#container header{
+	#container header{                      
 		background: #DDD;
 		border-bottom: 1px solid; 
 		padding: 8px;
@@ -56,6 +60,40 @@ body{
 		color: red;
 
 	}
+
+
+@media screen and (max-width: 320px){
+	#container header{                      
+		background: #DDD;
+		border-bottom: 1px solid; 
+		padding: 8px;
+		text-align: center;
+	}
+
+	#container header h1{
+		font-size: 6em;
+		margin: 1px;
+		color: 738678;
+		font-family: "Indie Flower";
+
+	}
+
+
+@media screen and (max-width: 360px){
+	#container header{                      
+		background: #DDD;
+		border-bottom: 1px solid; 
+		padding: 8px;
+		text-align: center;
+	}
+
+	#container header h1{
+		font-size: 2em;
+		margin: 1px;
+		color: 8c7987;
+
+	}
+
 
 #container header p{
 	color: blue;
