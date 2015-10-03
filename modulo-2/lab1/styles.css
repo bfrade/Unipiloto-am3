@@ -78,7 +78,7 @@ body{
 
 	}
 
-
+/*Segmento define segun el tamaño del screem ciertas caracteristicas que pueden variar*/
 @media screen and (max-width: 360px){
 	#container header{                      
 		background: #DDD;
