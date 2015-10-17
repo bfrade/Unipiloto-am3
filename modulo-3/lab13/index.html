@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="reveal-app">
+<head>
+	<title>Exercise</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="controllerOne">
+		
+<!-- se crean botones y la directiva ng-show determina en el modulo reveal-app que objeto mostrar 
+y cual no, el tercer boton "prueba" muestra el boton en todo momento ya que no tiene una directiva ng-show-->
+		<button ng-click="oculButton()" ng-show="revealButton">Ocultar</button>
+		<button ng-click="mostButton()" ng-show="otroButton">Mostrar</button>
+		<button ng-click="prueba()" >Prueba</button>
+		
+		<div ng-show="revealDiv">
+			<h1>No me veas</h1>
+		</div>
+
+	</div>
+
+<!-- las siguientes declaraciones llaman a Angular-->
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+	<script type="text/javascript">
+
+
+/*este modulo determina que elementos se desean ver u ocultar dependiendo de las acciones ejecutadas controladas por $scope*/
+	angular.module('reveal-app', [])
+		   .controller('controllerOne', function($scope){  
+		   		$scope.revealDiv = true;
+		   		$scope.revealButton = true;
+		   		$scope.otroButton = false;
+
+		   		$scope.oculButton = function(){
+		   			$scope.revealDiv = false;
+		   			$scope.revealButton = false;
+		   			$scope.otroButton = true;
+		   		};
+
+		   		$scope.mostButton = function(){
+		   			$scope.revealDiv = true;
+		   			$scope.revealButton = true;
+		   			$scope.otroButton = false;
+
+		   		};
+
+		   });
+	</script>
+
+
+</body>
+</html>
