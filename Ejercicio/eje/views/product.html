@@ -1,0 +1,16 @@
+<h1>Cualquier Producto</h1>
+
+	<div ng-controller="productsController">
+		<table>
+		   <tr>
+		      <th>Nombre</th>
+		      <th>Precio</th>
+			  <th>Cantidad</th>
+		   </tr>
+		   <tr ng-repeat="product in products">
+		      <td>{{ product.Nombre }}</td>
+		      <td>{{ product.Precio }}</td>
+			  <td>{{ product.Cantidad }}</td>
+		   </tr>
+		</table>
+	</div>

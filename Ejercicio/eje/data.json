@@ -1,0 +1,22 @@
+[
+	{
+	"Nombre" : "Pantalla",
+	"Precio" : 5000,
+	"Cantidad" : 10
+	},
+	{
+	"Nombre" : "cpu",
+	"Precio" : 2000,
+	"Cantidad" : 10
+	},
+	{
+	"Nombre" : "Teclado",
+	"Precio" : 1500,
+	"Cantidad" : 10
+	},
+	{
+	"Nombre" : "Mouse",
+	"Precio" : 100,
+	"Cantidad" : 10
+	}
+]
