@@ -19,7 +19,7 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.app.Lab1"
+            "PACKAGE_NAME": "com.app.lab1"
         }
     },
     "dependent_plugins": {}

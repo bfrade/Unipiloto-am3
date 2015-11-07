@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.app.Lab1;
+package com.app.lab1;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
