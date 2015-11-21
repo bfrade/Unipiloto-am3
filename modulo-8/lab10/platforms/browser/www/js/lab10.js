@@ -44,6 +44,11 @@ angular.module('lab10', ['ngCordova'])
 		   	console.log('Usted cancelo');
 		 }
 
+		 else if (btnIndex === 0){
+
+		   	console.log('');
+		 }
+
   		 });
 	}
 
