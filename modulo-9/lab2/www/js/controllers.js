@@ -6,7 +6,7 @@ angular.module('app.controllers', ['ui.router', 'app.services'])
    
 .controller('listCtrl', function ($scope, Products) {
 
-    Products.item_list(function(data){
+    Products.item_list.query(function(data){
 
         $scope.list = data;
 
