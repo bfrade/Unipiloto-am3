@@ -1,4 +1,4 @@
-angular.module('app.controllers', [])
+angular.module('app.controllers', ['ui.router', 'app.services'])
      
 .controller('homeCtrl', function($scope) {
 
@@ -24,9 +24,19 @@ angular.module('app.controllers', [])
 
 })
    
-.controller('productCreateCtrl', function($scope) {
+.controller('productCreateCtrl', function($scope, Products) {
+
+   Products.item_create.save(data, function(data){
+
+        $scope.data = data;
+
+        console.log($scope.data);
+    });
+
 
 })
+
+
    
 .controller('profileCtrl', function($scope) {
 

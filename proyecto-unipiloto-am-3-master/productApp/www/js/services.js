@@ -1,4 +1,4 @@
-angular.module('app.services', [])
+angular.module('app.services', ['ngResource'])
 
 .factory('BlankFactory', [function(){
 
@@ -6,5 +6,12 @@ angular.module('app.services', [])
 
 .service('BlankService', [function(){
 
-}]);
+}])
 
+.service('Products', function($resource){
+
+
+	this.item_create = $resource('http://private-bcbaa-productapp.apiary-mock.com/products/create');
+
+
+});
