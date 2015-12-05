@@ -32,10 +32,14 @@ angular.module('app.routes', [])
     
       
         
-    .state('options', {
+    .state('menu.options', {
       url: '/options',
-      templateUrl: 'templates/options.html',
-      controller: 'optionsCtrl'
+      views: {
+        'side-menu21': {
+          templateUrl: 'templates/options.html',
+           controller: 'optionsCtrl'
+        }
+      }
     })
         
       
@@ -63,7 +67,7 @@ angular.module('app.routes', [])
       
         
     .state('productDetail', {
-      url: '/product-detail',
+      url: '/product-detail/:id',
       templateUrl: 'templates/productDetail.html',
       controller: 'productDetailCtrl'
     })
@@ -73,7 +77,7 @@ angular.module('app.routes', [])
       
         
     .state('productEdit', {
-      url: '/product-edit',
+      url: '/product-edit/:id',
       templateUrl: 'templates/productEdit.html',
       controller: 'productEditCtrl'
     })
